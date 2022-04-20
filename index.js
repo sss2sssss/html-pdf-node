@@ -72,6 +72,10 @@ async function generatePdfs(files, options, callback) {
       await page.setContent(html, {
         waitUntil: 'networkidle0', // wait for page to load completely
       });
+    }else if(file.html){
+      await page.setContent(file.html, {
+        waitUntil: 'networkidle0', // wait for page to load completely
+      });
     } else {
       await page.goto(file.url, {
         waitUntil: 'networkidle0', // wait for page to load completely
