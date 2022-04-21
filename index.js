@@ -79,6 +79,7 @@ async function generatePdfs(files, options, callback) {
     } else {
       await page.goto(file.url, {
         waitUntil: 'networkidle0', // wait for page to load completely
+        timeout:0
       });
     }
     let pdfObj = JSON.parse(JSON.stringify(file));
