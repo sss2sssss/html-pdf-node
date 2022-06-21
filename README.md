@@ -1,4 +1,4 @@
-# html-pdf-node
+# html-pdf-node-generator
 
 > Pagination plugin for converts html or url to pdf
 
@@ -10,7 +10,7 @@
 ## Installation
 
 ```sh
-npm install html-pdf-node
+npm install html-pdf-node-generator
 ```
 
 ## Usage
@@ -18,13 +18,13 @@ npm install html-pdf-node
 To convert `HTML` page to `PDF` using `generatePdf` method:
 
 ```js
-var html_to_pdf = require('html-pdf-node');
+var html_to_pdf = require('html-pdf-node-generator');
 
 let options = { format: 'A4' };
 // Example of options with args //
 // let options = { format: 'A4', args: ['--no-sandbox', '--disable-setuid-sandbox'] };
 
-let file = { content: "<h1>Welcome to html-pdf-node</h1>" };
+let file = { content: "<h1>Welcome to html-pdf-node-generator</h1>" };
 // or //
 let file = { url: "https://example.com" };
 html_to_pdf.generatePdf(file, options).then(pdfBuffer => {

@@ -1,6 +1,6 @@
 {
-  "name": "html-pdf-node",
-  "version": "1.1.1",
+  "name": "html-pdf-node-generator",
+  "version": "1.0.1",
   "description": "Convert any html content or html page to PDF",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha tests/*.js -R spec --ui bdd --timeout 5000"
   },
-  "author": "mrafiqk",
+  "author": "sss2sssss",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.7.2",
